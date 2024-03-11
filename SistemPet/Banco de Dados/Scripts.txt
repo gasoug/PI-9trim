@@ -1,0 +1,59 @@
+CREATE TABLE usuarios (
+    Cod_Usuario INT AUTO_INCREMENT PRIMARY KEY,
+    Nome VARCHAR(50),
+    Email VARCHAR(50),
+    CPF VARCHAR(15),
+    Celular VARCHAR(14),
+    Data_Nascimento DATE,
+    Genero VARCHAR(20),
+    Usuario VARCHAR(50),        
+    Senha VARCHAR(12),
+    Foto_Perfil BLOB
+);
+CREATE TABLE prestador (
+    Cod_Prestador INT AUTO_INCREMENT PRIMARY KEY,
+    Nome VARCHAR(50),
+    Email VARCHAR(50),
+    CPF VARCHAR(15),
+    Celular VARCHAR(14),
+    Data_Nascimento DATE,
+    Genero VARCHAR(20),
+    Usuario VARCHAR(50),        
+    Senha VARCHAR(12),
+    Sobre VARCHAR(500),
+    Valor_Hospedagem DOUBLE,
+    Final_Semana Boolean,
+    Disponibilidade_Ini DATE,
+    Disponibilidade_Fim DATE,
+    Peso_Pet INT,
+    Pet_Nao_Castrado BOOLEAN,
+    Renda_Principal BOOLEAN,
+    Renda_Extra BOOLEAN,
+    Socializacao BOOLEAN,
+    Txt_Necessidade VARCHAR(200),
+    Foto_Perfil BLOB
+);
+CREATE TABLE pet (
+    Codigo INT AUTO_INCREMENT PRIMARY KEY,
+    Cod_Usuario INT,
+    Cod_Prestador INT,
+    Nome VARCHAR(50),
+    Idade INT,
+    Anexo BLOB,
+    FOREIGN KEY (Cod_Usuario) REFERENCES usuarios(Cod_Usuario),
+    FOREIGN KEY (Cod_Prestador) REFERENCES prestador(Cod_Prestador)
+);
+CREATE TABLE endereco (
+    codigo INT AUTO_INCREMENT PRIMARY KEY,
+    cod_usuario INT,
+    cod_prestador INT,
+    logradouro VARCHAR(50),
+    bairro VARCHAR(50),
+    cep VARCHAR(9),
+    numero int,
+    cidade VARCHAR(50),
+    estado VARCHAR(2),
+    pais VARCHAR(50),
+    FOREIGN KEY (cod_usuario) REFERENCES usuarios(Cod_Usuario),
+    FOREIGN KEY (cod_prestador) REFERENCES prestador(Cod_Prestador)
+);
