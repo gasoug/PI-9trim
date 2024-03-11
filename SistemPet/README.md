@@ -33,7 +33,7 @@ Acesse o site do projeto:
 ## Tecnologias Utilizadas
 HTML  
 CSS  
-JavaScript
+JavaScript  
 PHP
 
 ## Autores:
