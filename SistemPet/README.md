@@ -7,15 +7,15 @@ Este repositório contém o código e a documentação para a 2ª entrega do Pro
 Este projeto é parte do curso e representa uma aplicação prática do conteúdo desenvolvido durante a primeira entrega. Neste, desenvolvemos uma empresa prestadora de serviços de hospedagem de animais de estimação, denominada Pet Fun. Ao entrar no site, é solicitado o login e senha do usuário cadasrado. Caso não possua cadastro, há duas opções possíveis, cadastrar como interessado nos serviços (usuário), ou então como fornecedor da hospedagem.
 
 ## Como Usar (Utilizando wampserver)
-Primeiro efetuar o download do wampserver e instalar: https://www.wampserver.com/en/#download-wrapper;
-Criar uma pasta na área de trabalho e clonar o repositório com os arquivos fontes;
-Após a instalação do Wamp e clone do projeto, copiar a pasta *SistemPet*, e colar na pasta www na raiz do WampServer(padrão C:\wamp64\www)
-Após esse passo, executar o wampserver até que apareça dessa forma na barra de tarefas: ![WampServer](img/wamp.png "Executando");
-Clicar no icone do wampserver e ir até a opção PhpMyAdmin ![MyAdmin](img/PhpMyAdmin.png "Executando");
-Ao acessar o menu PhpMyAdmin preencher o utilizador como root, sem senha e apertar em *Entrada*
-Logado no PhpMyAdmin, criar o scheema com nome de pet-fun: ![MyAdmin](img/CriarDB.png "DB");
-Com a base criada, vamos criar as tabelas para os casos. Copiar os Scripts na pasta Banco de Dados: ![MyAdmin](img/CriarTB.png "DB");
-Por fim, pode acessar o projeto em: http://localhost/SystemPet/index.php
+Primeiro efetuar o download do wampserver e instalar: https://www.wampserver.com/en/#download-wrapper;  
+Criar uma pasta na área de trabalho e clonar o repositório com os arquivos fontes;  
+Após a instalação do Wamp e clone do projeto, copiar a pasta *SistemPet*, e colar na pasta www na raiz do WampServer(padrão C:\wamp64\www);  
+Após esse passo, executar o wampserver até que apareça dessa forma na barra de tarefas: ![WampServer](img/wamp.png "Executando");  
+Clicar no icone do wampserver e ir até a opção PhpMyAdmin ![MyAdmin](img/PhpMyAdmin.png "Executando");  
+Ao acessar o menu PhpMyAdmin preencher o utilizador como root, sem senha e apertar em *Entrada*;  
+Logado no PhpMyAdmin, criar o scheema com nome de pet-fun: ![MyAdmin](img/CriarDB.png "DB");  
+Com a base criada, vamos criar as tabelas para os casos. Copiar os Scripts na pasta Banco de Dados: ![MyAdmin](img/CriarTB.png "DB");  
+Por fim, pode acessar o projeto em: http://localhost/SystemPet/index.php  
 
 1 - Caso cadastrado:  
 1.1 - Digite o usuário e senha.  
