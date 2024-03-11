@@ -9,17 +9,20 @@
     <title>Cadastro de Dados Pessoais</title>
 </head>
 <body>
+<?php
+    session_start();
+    $_SESSION['login'] = $login;    
+?>
 <div class="container">    
     <div class="col-md-12 d-flex align-items-center justify-content-center">
         <div class="col-md-6">
             <div class="col-md-12 d-flex align-items-center justify-content-center">
-                <a href="index.html"><img src="./img/Logo.png" alt="Logo" class="img-fluid" id="logo"></a>    
+                <a href="index.php"><img src="./img/Logo.png" alt="Logo" class="img-fluid" id="logo"></a>    
             </div>
             <br>
             <h2>Dados Pessoais</h2>
             <div class="col-md-3 text-center" id="perfil">
-                <input type="file" class="custom-file-input" id="load" name="arquivo" accept="*/*">
-                <label class="custom-file-label" id="load" for="load">+</label>
+                <img src="./backend/carrega_fotos.php" alt="load" class="img-fluid" id="load" name="arquivo_perfil">
             </div>
             <?php
                 if(isset($_GET['nome'])) {

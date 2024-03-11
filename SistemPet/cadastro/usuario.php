@@ -17,7 +17,7 @@
         <div class="col-md-12 d-flex align-items-center justify-content-center">
         <div class="col-md-6">
             <div class="col-md-12 d-flex align-items-center justify-content-center">
-                <a href="index.html"><img src="../img/Logo.png" alt="Logo" class="img-fluid" id="logo"></a>    
+                <a href="../index.php"><img src="../img/Logo.png" alt="Logo" class="img-fluid" id="logo"></a>    
             </div>
           <br>
             <h2>Dados Pessoais</h2>

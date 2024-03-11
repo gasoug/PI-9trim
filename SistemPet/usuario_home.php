@@ -42,7 +42,7 @@
                 </div>
             </div>            
             <div class="text-center mt-5 mb-5">
-                <button type="submit" id="enviar_cadastro" class="btn btn-primary">Encontrar Hóspede</button>
+                <a href="buscar_hospede.php"><button class="btn btn-primary" id="cadastrar">Encontrar Hóspede</button></a>
             </div>
         </div>
     </div>

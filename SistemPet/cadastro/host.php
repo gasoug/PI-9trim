@@ -18,14 +18,14 @@
         <div class="col-md-12 d-flex align-items-center justify-content-center">
             <div class="col-md-6">
                 <div class="col-md-12 d-flex align-items-center justify-content-center">
-                    <a href="index.html"><img src="../img/Logo.png" alt="Logo" class="img-fluid" id="logo"></a>    
+                    <a href="../index.php"><img src="../img/Logo.png" alt="Logo" class="img-fluid" id="logo"></a>    
                 </div>
                 <br>
                 <h2>Dados Pessoais</h2>
                 <!-- Imagem de perfil com borda arredondada -->
                 <form id="form" method="post" action="../backend/incluir_host.php" enctype="multipart/form-data"> 
                     <div class="col-md-3 text-center" id="perfil">
-                        <input type="file" class="custom-file-input" id="load" name="arquivo" accept="*/*">
+                        <input type="file" class="custom-file-input" id="load" name="arquivo_perfil" accept="*/*">
                         <label class="custom-file-label" id="load" for="load">+</label>                
                     </div>
                     <h4>Foto de perfil</h4>            
@@ -75,7 +75,7 @@
                     <h5>Meus Pets</h5>
                     <div class="row">
                     <div class="col-md-3" id="anexar">
-                        <input type="file" class="custom-file-input" id="search" name="arquivo" accept="*/*">
+                        <input type="file" class="custom-file-input" id="search" name="arquivo_pet" accept="*/*">
                         <label class="custom-file-label" id="search" for="search">+</label>
                     </div>
                         <div class="col-md-9 mb-3">
@@ -89,18 +89,18 @@
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <div class="form-group">
-                                <label for="valorHospedagem">Valor da Hospedagem</label>
-                                <input type="text" class="form-control" id="valorHospedagem" placeholder="Digite o valor">
+                                <label for="valor_hospedagem">Valor da Hospedagem</label>
+                                <input type="text" class="form-control" id="valor_hospedagem" name="valor_hospedagem" placeholder="Digite o valor">
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label>Disponível final de semana</label>
                             <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="disponivelSim">
+                                <input type="radio" class="form-check-input" id="disponivelSim" name="final_semana" value="sim">
                                 <label class="form-check-label" for="disponivelSim">Sim</label>
                             </div>
                             <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="disponivelNao">
+                                <input type="radio" class="form-check-input" id="disponivelNao" name="final_semana"  value="nao">
                                 <label class="form-check-label" for="disponivelNao">Não</label>
                             </div>
                         </div>
@@ -110,13 +110,13 @@
                         <div class="col-md-6">
                             <label for="dataDe">De</label>
                             <div class="form-group">                            
-                                <input type="date" class="form-control" id="dataDe">
+                                <input type="date" class="form-control" id="dataDe" name="disponibilidade_ini">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="dataAte">Até</label>
-                                <input type="date" class="form-control" id="dataAte">
+                                <input type="date" class="form-control" id="dataAte" name="disponibilidade_fim">
                             </div>
                         </div>                    
                     </div>
@@ -137,7 +137,7 @@
                                 </div>            
                             </div>                    
                             <div class="col-md-10">
-                                <input type="range" id="pesoPet" min="8" max="40">                        
+                                <input type="range" id="pesoPet" min="8" max="40" name="peso_pet">                        
                             </div>  
                             <div class="col-md-1">
                                 <div class="col d-flex justify-content-end">
@@ -148,20 +148,69 @@
                     </div>
                     <div class="row mt-3">
                         <div class="col-md-6">
-                            <label>Aceita Pet que não seja cadastrado?</label>
-                            <div class="form-check">
-                                <br>
-                                <input type="checkbox" class="form-check-input" id="aceitaPetSim">
-                                <label class="form-check-label" for="aceitaPetSim">Sim</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="aceitaPetNao">
-                                <label class="form-check-label" for="aceitaPetNao">Não</label>
-                            </div>
+                            <label for="genero">Aceita Pet que não seja cadastrado?</label>
+                            <div class="form-group">
+                            <br>                     
+                                <label>
+                                    <input type="radio" class="form-check-input" name="aceitaPet" value="sim"> Sim
+                                </label>                        
+                            </div>                    
+                        </div>
+                        <div class="col-md-6">
+                            <label for="genero"></label>
+                            <div class="form-group"> 
+                            <br>
+                                <label>
+                                    <input type="radio" class="form-check-input" name="aceitaPet" value="nao"> Não
+                                </label>
+                            </div>               
                         </div>
                     </div>
                     <br>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="form-group">
+                                <label for="necessidades">Necessidades e objetivos:</label>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="renda_principal" name="renda_principal">
+                                    <label class="form-check-label" for="renda_principal">Obter Renda Principal</label>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="renda_extra" name="renda_extra">
+                                    <label class="form-check-label" for="renda_extra">Obter Renda Extra</label>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="socializacao" name="socializacao">
+                                    <label class="form-check-label" for="socializacao">Socialização</label>
+                                </div>                                
+                            </div>                            
+                        </div>                        
+                        <div class="mb-6">
+                            <br>
+                            <label for="txt_necessidade">Outras Necessidades e Objetivos</label>
+                            <textarea class="form-control" id="txt_necessidade" name="txt_necessidade" maxlength="200"></textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-md-6 mb-6">
+                            <div class="form-group">
+                            <label for="txt_necessidade">Especializações</label>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="renda_principal" name="renda_principal">
+                                    <label class="form-check-label" for="renda_principal"> Aplica medicamento Oral</label>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="renda_extra" name="renda_extra">
+                                    <label class="form-check-label" for="renda_extra"> Aplica medicamento Injetável</label>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="socializacao" name="socializacao">
+                                    <label class="form-check-label" for="socializacao"> Aceita Gatos</label>
+                                </div>                                
+                            </div>                            
+                        </div>
                     <div class="mb-3">
+                    <br>
                         <label for="usuario">Usuario</label>
                         <input type="text" class="form-control" id="usuario" name="usuario" maxlength="50"  >
                     </div>   
