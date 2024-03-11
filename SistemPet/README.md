@@ -1,7 +1,7 @@
-# Projeto Integrador - Desenvolvimento de Sistemas Orientado a Dispositivos Móveis e Baseados na Web
+# PROJETO INTEGRADOR - ANÁLISE DE SOLUÇÕES INTEGRADAS PARA ORGANIZAÇÕES
 
-## README: Projeto Integrador - 4º Semestre
-Este repositório contém o código e a documentação para a 2ª entrega do Projeto Integrador - 4º Semestre
+## README: Projeto Integrador - 5º Semestre
+Este repositório contém o código e a documentação para a 2ª entrega do Projeto Integrador - 5º Semestre
 
 ## Sobre o Projeto
 Este projeto é parte do curso e representa uma aplicação prática do conteúdo desenvolvido durante a primeira entrega. Neste, desenvolvemos uma empresa prestadora de serviços de hospedagem de animais de estimação, denominada Pet Fun. Ao entrar no site, é solicitado o login e senha do usuário cadasrado. Caso não possua cadastro, há duas opções possíveis, cadastrar como interessado nos serviços (usuário), ou então como fornecedor da hospedagem.
