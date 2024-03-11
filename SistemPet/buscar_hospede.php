@@ -13,23 +13,24 @@
 <div class="container">    
     <div class="col-md-12 d-flex align-items-center justify-content-center">
         <div class="col-md-6">
+        <form id="form" method="post" action="backend/buscar_hospede.php"> 
             <h3>Encontrar Hóspedes</h3>
             <p>Endereço</p>
             <div class="col-md-3 text-center">
-                <input type="text" class="form-control" id="login1" name="login" required>
+                <input type="text" class="form-control" id="login1" name="endereco" required>
             </div>                
             <hr>
             <div class="row mt-3">
                 <div class="col-md-6">
                     <label for="dataDe">Data Entrada</label>
                     <div class="form-group">                            
-                        <input type="date" class="form-control" id="dataDe">
+                        <input type="date" class="form-control" id="dataDe" name="disponibilidade_ini">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="dataAte">Data Saída</label>
-                        <input type="date" class="form-control" id="dataAte">
+                        <input type="date" class="form-control" id="dataAte" name="disponibilidade_fim">
                     </div>
                 </div>                    
             </div>
@@ -55,15 +56,15 @@
             <hr>              
             <div class="row mt-3">
                 <div class="col-md-6">
-                    <label for="dataDe">Faixa de preço (por noite)</label>
+                    <label for="valorDe">Faixa de preço (por noite)</label>
                     <div class="form-group">                            
-                        <input type="date" class="form-control" id="dataDe">
+                        <input type="date" class="form-control" id="valorDe" name="valorDe">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="dataAte"></label>
-                        <input type="date" class="form-control" id="dataAte">
+                        <label for="valorAte"></label>
+                        <input type="date" class="form-control" id="valorAte" name="valorAte">
                     </div>
                 </div>                    
             </div>
@@ -71,6 +72,7 @@
             <div class="text-center mt-5 mb-5">
                 <button type="submit" id="enviar_cadastro" class="btn btn-primary">Buscar</button>
             </div>
+        </form>
         </div>
     </div>
 </div>      
