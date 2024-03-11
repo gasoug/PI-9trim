@@ -4,10 +4,7 @@
 Este repositório contém o código e a documentação para a 2ª entrega do Projeto Integrador - 4º Semestre
 
 ## Sobre o Projeto
-Este projeto é parte do curso e representa uma aplicação prática do conteúdo desenvolvido durante a primeira entrega. Neste, desenvolvemos uma empresa prestadora de serviços de hospedagem de animais de estimação, denominada Pet Fun. Ao entrar no site (link abaixo), é solicitado o login e senha do usuário cadasrado. Caso não possua cadastro, há duas opções possíveis, cadastrar como interessado nos serviços (usuário), ou então como fornecedor da hospedagem.
-
-## Site
-O site correspondente a este projeto pode ser acessado [aqui](https://danilors-07.github.io/PI-8Trim/).
+Este projeto é parte do curso e representa uma aplicação prática do conteúdo desenvolvido durante a primeira entrega. Neste, desenvolvemos uma empresa prestadora de serviços de hospedagem de animais de estimação, denominada Pet Fun. Ao entrar no site, é solicitado o login e senha do usuário cadasrado. Caso não possua cadastro, há duas opções possíveis, cadastrar como interessado nos serviços (usuário), ou então como fornecedor da hospedagem.
 
 ## Como Usar
 Acesse o site do projeto:
@@ -27,14 +24,20 @@ Acesse o site do projeto:
 3.2 - Após ser direcionado a uma nova tela, preencha os campos solicitados.  
 3.3 - Após preencher os campos indicados e concordar com os Termos e condições de uso e Política de privacidade, clicando em "Enviar Cadastro", o sistema processará os dados do anfitrião (host), disponibilizando o acesso através do login e senha digitados.
 
+4 - Caso buscar hóspede:  
+4.1 - Digite o usuário e senha.  
+4.2 - Clique em logar  
+4.3 - Após realizar o login, clique em "Buscar Hóspede"  
+4.4 - Aplique os filtros que desejar, em seguida clique em "Buscar"
+
 ## Tecnologias Utilizadas
 HTML  
 CSS  
 JavaScript
+PHP
 
 ## Autores:
 Aline Cardoso da Silva  
 Danilo Ribeiro da Silva  
 Gabriel de Sousa  
-Gabriela Lobo da Silva  
 Wagner Dias de Souza
