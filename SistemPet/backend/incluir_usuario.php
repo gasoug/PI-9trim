@@ -42,14 +42,14 @@
             $row = $resultado->fetch_assoc();
             $cod_usuario = $row["COD_USUARIO"];
             $sql_pet = "INSERT INTO pet (cod_usuario, nome, idade, anexo) VALUES ('$cod_usuario', '$nome_pet', '$idade_pet', '$foto_pet')";
+            $sql_endereco = "INSERT INTO endereco (cod_usuario, logradouro, numero) VALUES ('$cod_usuario', '$endereco', '$numero')";
             $conn->query($sql_pet) or die(mysqli_error($conn));
+            $conn->query($sql_endereco) or die(mysqli_error($conn));
         }
-        echo "<script>Swal.fire('Sucesso', 'Cadastro realizado com sucesso!', 'success').then(function() { window.location = '../index.php'; });</script>";
+        echo "<script>alert('Cadastro realizado com sucesso!'); window.location = '../index.php';</script>";
     } else {
-        echo "<script>Swal.fire('Erro', 'Erro ao cadastrar: " . $conn->error . "', 'error');</script>";
-    }
-    
-
+        echo "<script>alert('Erro ao cadastrar: " . $conn->error . "'); </script>";
+    }    
     // Fecha a conexão
     $conn->close();
 

@@ -139,7 +139,7 @@ input[type="range"] {
       background: #C37796;
   }
 }
-#sobre{
+#sobre, #avaliacoes{
   border: none;
 }
 .btn-primary{

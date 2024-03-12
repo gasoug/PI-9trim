@@ -31,6 +31,9 @@ CREATE TABLE prestador (
     Renda_Extra BOOLEAN,
     Socializacao BOOLEAN,
     Txt_Necessidade VARCHAR(200),
+    Medicamento_oral BOOLEAN,
+    Medicamento_injetavel BOOLEAN,
+    Aceita_gatos BOOLEAN,
     Foto_Perfil BLOB
 );
 CREATE TABLE pet (
@@ -56,4 +59,22 @@ CREATE TABLE endereco (
     pais VARCHAR(50),
     FOREIGN KEY (cod_usuario) REFERENCES usuarios(Cod_Usuario),
     FOREIGN KEY (cod_prestador) REFERENCES prestador(Cod_Prestador)
+);
+
+CREATE TABLE chat (
+    Cod_Chat INT AUTO_INCREMENT PRIMARY KEY,
+    Cod_Usuario INT,
+    Cod_Prestador INT,
+    Data_Inicio DATETIME,
+    FOREIGN KEY (Cod_Usuario) REFERENCES usuarios(Cod_Usuario),
+    FOREIGN KEY (Cod_Prestador) REFERENCES prestador(Cod_Prestador)
+);
+
+CREATE TABLE avaliacao (
+    Cod_Usuario INT,
+    Cod_Prestador INT,
+    Estrelas INT,
+    Comentario VARCHAR(1000),
+    FOREIGN KEY (Cod_Usuario) REFERENCES usuarios(Cod_Usuario),
+    FOREIGN KEY (Cod_Prestador) REFERENCES prestador(Cod_Prestador)
 );

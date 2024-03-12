@@ -25,7 +25,7 @@
                 <!-- Imagem de perfil com borda arredondada -->
                 <form id="form" method="post" action="../backend/incluir_host.php" enctype="multipart/form-data"> 
                     <div class="col-md-3 text-center" id="perfil">
-                        <input type="file" class="custom-file-input" id="load" name="arquivo_perfil" accept="*/*">
+                    <input type="file" class="custom-file-input" id="load" name="arquivo_perfil" accept="image/jpeg, image/jpg, image/png">
                         <label class="custom-file-label" id="load" for="load">+</label>                
                     </div>
                     <h4>Foto de perfil</h4>            
@@ -75,7 +75,7 @@
                     <h5>Meus Pets</h5>
                     <div class="row">
                     <div class="col-md-3" id="anexar">
-                        <input type="file" class="custom-file-input" id="search" name="arquivo_pet" accept="*/*">
+                        <input type="file" class="custom-file-input" id="search" name="arquivo_pet" accept="image/jpeg, image/jpg, image/png">
                         <label class="custom-file-label" id="search" for="search">+</label>
                     </div>
                         <div class="col-md-9 mb-3">
@@ -193,19 +193,19 @@
                     </div>
                     <br>
                     <div class="col-md-6 mb-6">
-                            <div class="form-group">
+                        <div class="form-group">
                             <label for="txt_necessidade">Especializações</label>
                                 <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="renda_principal" name="renda_principal">
-                                    <label class="form-check-label" for="renda_principal"> Aplica medicamento Oral</label>
+                                    <input type="checkbox" class="form-check-input" id="medicamento_oral" name="medicamento_oral">
+                                    <label class="form-check-label" for="medicamento_oral"> Aplica medicamento Oral</label>
                                 </div>
                                 <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="renda_extra" name="renda_extra">
-                                    <label class="form-check-label" for="renda_extra"> Aplica medicamento Injetável</label>
+                                    <input type="checkbox" class="form-check-input" id="medicamento_injetavel" name="medicamento_injetavel">
+                                    <label class="form-check-label" for="medicamento_injetavel"> Aplica medicamento Injetável</label>
                                 </div>
                                 <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="socializacao" name="socializacao">
-                                    <label class="form-check-label" for="socializacao"> Aceita Gatos</label>
+                                    <input type="checkbox" class="form-check-input" id="aceita_gatos" name="aceita_gatos">
+                                    <label class="form-check-label" for="aceita_gatos"> Aceita Gatos</label>
                                 </div>                                
                             </div>                            
                         </div>

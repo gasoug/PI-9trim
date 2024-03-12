@@ -16,7 +16,7 @@
         <form id="form" method="post" action="backend/buscar_hospede.php"> 
             <h3>Encontrar Hóspedes</h3>
             <p>Endereço</p>
-            <div class="col-md-3 text-center">
+            <div class="col-md-12 text-center">
                 <input type="text" class="form-control" id="login1" name="endereco" required>
             </div>                
             <hr>
@@ -69,6 +69,22 @@
                 </div>                    
             </div>
             <hr>
+            <div class="form-group">
+                <label for="txt_necessidade">Especializações</label>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="medicamento_oral" name="medicamento_oral">
+                    <label class="form-check-label" for="medicamento_oral"> Aplica medicamento Oral</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="medicamento_injetavel" name="medicamento_injetavel">
+                    <label class="form-check-label" for="medicamento_injetavel"> Aplica medicamento Injetável</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="aceita_gatos" name="aceita_gatos">
+                    <label class="form-check-label" for="aceita_gatos"> Aceita Gatos</label>
+                </div>                                
+            </div>  
+            <br>                          
             <div class="text-center mt-5 mb-5">
                 <button type="submit" id="enviar_cadastro" class="btn btn-primary">Buscar</button>
             </div>

@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script  src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./js/img.js"></script>
   <link rel="stylesheet" href="./css/style.css">
   <title>Formulário de Login</title>
 </head>
@@ -38,7 +39,7 @@
               <a href="#" id="recovery">Recuperar senha</a>
             </div>
             <div class="text-center">
-              <button type="submit" class="btn btn-primary" id="logar">Logar</button>
+              <button type="submit" class="btn btn-primary" id="logar" onclick="carregar()">Logar</button>
               <br>
               <br>              
             </div>
